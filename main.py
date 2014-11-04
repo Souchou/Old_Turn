@@ -56,7 +56,6 @@ def get_text():
         os.mkdir(book_name)
     except OSError:
         pass
-    global how_to_save
     how_to_save = raw_input('How to save?\n1,in one file; 2,in chapters: ')
     if how_to_save != '1' and how_to_save != '2':
         print 'Enter 1 or 2.'
